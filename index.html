@@ -3,60 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSS Society Sharing Page</title>
+    <title>Computer Science Students Society Portal</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>CSSS Society Portal</h1>
+    <header class="header">
+        <h1>Computer Science Students Society</h1>
         <nav>
-            <a href="#courses">DSA Courses</a>
-            <a href="#projects">Projects</a>
-            <a href="#videos">YouTube Videos</a>
-            <a href="#contact">Submit Your Project</a>
+            <ul class="nav-links">
+                <li><a href="#courses">DSA Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#videos">YouTube Videos</a></li>
+                <li><a href="#contact">Submit Project</a></li>
+            </ul>
         </nav>
     </header>
 
+    <section id="hero">
+        <h2>Learn, Build, Collaborate</h2>
+        <p>Explore DSA courses, share your projects, and grow with us!</p>
+        <a href="#courses" class="btn">Get Started</a>
+    </section>
+
     <section id="courses">
-        <h2>DSA Courses</h2>
-        <ul>
-            <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
-            <li><a href="https://www.coursera.org/">Coursera</a></li>
-            <li><a href="https://www.udemy.com/">Udemy</a></li>
-        </ul>
+        <h2>Top DSA Courses</h2>
+        <div class="course-cards">
+            <div class="card">
+                <h3>GeeksforGeeks</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Explore</a>
+            </div>
+            <div class="card">
+                <h3>Coursera</h3>
+                <a href="https://www.coursera.org/" target="_blank">Explore</a>
+            </div>
+            <div class="card">
+                <h3>Udemy</h3>
+                <a href="https://www.udemy.com/" target="_blank">Explore</a>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Members' Projects</h2>
         <ul id="project-list">
-            <li>Project 1: <a href="#">Sample Project Link</a></li>
-            <!-- New projects will be added dynamically here -->
+            <li>Sorting Visualizer: <a href="#">GitHub Link</a></li>
+            <li>Weather App: <a href="#">GitHub Link</a></li>
         </ul>
     </section>
 
     <section id="videos">
         <h2>Recommended YouTube Videos</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QPZ0pIK_wsc" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/QPZ0pIK_wsc" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hRG7RmPvLCY" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Submit Your Project</h2>
         <form action="https://docs.google.com/forms/d/e/YOUR-FORM-ID/formResponse" target="_blank">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="entry.YOUR-FIELD-ID" required>
-
-            <label for="project-link">Project Link:</label>
-            <input type="url" id="project-link" name="entry.YOUR-FIELD-ID" required>
-
+            <input type="text" placeholder="Your Name" required>
+            <input type="url" placeholder="Project Link" required>
             <button type="submit">Submit</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 CSSS Society</p>
+        <p>&copy; 2024 Computer Science Students Society</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
