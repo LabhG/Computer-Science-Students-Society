@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSS Society Sharing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSSS Society Portal</h1>
+        <nav>
+            <a href="#courses">DSA Courses</a>
+            <a href="#projects">Projects</a>
+            <a href="#videos">YouTube Videos</a>
+            <a href="#contact">Submit Your Project</a>
+        </nav>
+    </header>
+
+    <section id="courses">
+        <h2>DSA Courses</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+            <li><a href="https://www.coursera.org/">Coursera</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Members' Projects</h2>
+        <ul id="project-list">
+            <li>Project 1: <a href="#">Sample Project Link</a></li>
+            <!-- New projects will be added dynamically here -->
+        </ul>
+    </section>
+
+    <section id="videos">
+        <h2>Recommended YouTube Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QPZ0pIK_wsc" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Submit Your Project</h2>
+        <form action="https://docs.google.com/forms/d/e/YOUR-FORM-ID/formResponse" target="_blank">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="entry.YOUR-FIELD-ID" required>
+
+            <label for="project-link">Project Link:</label>
+            <input type="url" id="project-link" name="entry.YOUR-FIELD-ID" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CSSS Society</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
